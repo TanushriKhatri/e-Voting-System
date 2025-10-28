@@ -1,15 +1,21 @@
 // ...existing code...
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 export default function Header(){
     return(
-        <div>
-            <h2>Election Commission</h2> 
+        <div className="header">
+            <h2>Election Commission</h2>
+            <nav className="nav">
+                <Link to="/">Home</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/epic-lookup">Epic Lookup</Link>
+            </nav> 
         </div>
         
     )
-}
+}   
 
 export  function Body(){
     return(
